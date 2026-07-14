@@ -33,32 +33,22 @@ const educationData = [
 export function Education() {
   return (
     <section id="education" className="py-28 px-4 bg-background relative overflow-hidden">
-      {/* Subtle Dotted Grid Overlay */}
       <div className="absolute inset-0 grid-bg opacity-[0.25] -z-10" />
-
-      {/* Background glow spot */}
       <div className="absolute top-[30%] left-[-15%] w-[400px] h-[400px] rounded-full bg-indigo-500/5 blur-[120px] pointer-events-none -z-10 animate-pulse" />
 
       <div className="max-w-5xl mx-auto">
         <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
-            Education & Certifications
-          </h2>
-          <p className="text-lg text-slate-400 font-medium">
-            Academic excellence and professional credentials
-          </p>
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">Education</h2>
+          <p className="text-lg text-slate-400 font-medium">Academic background and achievements</p>
         </div>
 
-        {/* Timeline Cards */}
         <div className="space-y-6">
           {educationData.map((edu, index) => (
             <div
               key={index}
               className={`relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-8 hover:bg-[#0c1122]/80 transition-all duration-500 hover:scale-[1.005] ${edu.borderColor}`}
             >
-              {/* Left Accent Color bar */}
               <div className={`absolute top-0 left-0 w-[5px] h-full ${edu.accentColor}`} />
-
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4 pl-2">
                 <div>
                   <h3 className="text-xl font-bold text-white">{edu.school}</h3>
@@ -83,29 +73,6 @@ export function Education() {
             </div>
           ))}
         </div>
-
-        {/* Certifications Block */}
-        <div className="mt-12 bg-primary/[0.02] border border-primary/20 hover:border-primary/40 rounded-2xl p-8 hover:shadow-[0_0_50px_-12px_rgba(139,92,246,0.15)] transition-all duration-500">
-          <h3 className="text-xl font-bold text-foreground mb-6">
-            Certifications
-          </h3>
-
-          <div className="grid md:grid-cols-2 gap-4">
-            {[
-              'Infosys Springboard – Web Fundamentals: Web Development with HTML',
-              'CCNA: Introduction to Networks',
-              'CCNA: Switching, Routing, and Wireless Essentials',
-              'CCNA: Enterprise Networking, Security, and Automation',
-              'Cisco Networking Academy: Python Essentials 1 & 2',
-            ].map((cert, index) => (
-              <div key={index} className="flex items-start gap-3 bg-[#0c1020]/75 border border-white/[0.05] p-4 rounded-xl shadow-sm hover:border-primary/30 transition-all duration-200">
-                <span className="text-primary font-bold mt-0.5">•</span>
-                <span className="text-slate-400 text-sm font-medium">{cert}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
       </div>
     </section>
   )
