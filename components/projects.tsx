@@ -1,10 +1,11 @@
 'use client'
 
-import { ExternalLink } from 'lucide-react'
+import { Code2, ExternalLink } from 'lucide-react'
 
 const projects = [
   {
     title: 'ClinSight AI',
+    githubUrl: 'https://github.com/NischithGowdaR/ClinSight-AI',
     subtitle: 'Clinical Workflow Platform',
     description:
       'Multi-module platform automating clinical workflows including pre-consultation briefs, drug interaction checks, and specialist routing. Features OCR-based document parsing and real-time data sync.',
@@ -14,13 +15,13 @@ const projects = [
       'Document parsing with OCR',
     ],
     tags: ['React.js', 'Node.js', 'AI/ML', 'Python'],
-    link: '#',
     accentColor: 'from-cyan-500 to-blue-500',
     borderColor: 'hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]',
     tagBgColor: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
   },
   {
     title: 'Career-Mock',
+    githubUrl: 'https://github.com/NischithGowdaR/career_mock',
     subtitle: 'Voice-Based Interview Platform',
     description:
       'Voice-interactive interview platform with Supabase auth. Deployed on Vercel with recruiter credit system.',
@@ -31,13 +32,13 @@ const projects = [
       'Role-based access control',
     ],
     tags: ['React.js', 'Supabase', 'AI/ML', 'Vercel'],
-    link: '#',
     accentColor: 'from-violet-500 to-purple-500',
     borderColor: 'hover:border-violet-500/50 hover:shadow-[0_0_30px_rgba(139,92,246,0.15)]',
     tagBgColor: 'bg-violet-500/10 text-violet-400 border-violet-500/30',
   },
   {
     title: 'SmartHome',
+    githubUrl: 'https://github.com/NischithGowdaR/ai_home_automation_system',
     subtitle: 'Home Automation System',
     description:
       'Browser-based home automation system with voice-to-text control and FastAPI backend for intelligent device management.',
@@ -48,7 +49,6 @@ const projects = [
       'FastAPI backend',
     ],
     tags: ['React.js', 'FastAPI', 'Python', 'AI/ML'],
-    link: '#',
     accentColor: 'from-emerald-500 to-green-500',
     borderColor: 'hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.15)]',
     tagBgColor: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
@@ -113,7 +113,7 @@ export function Projects() {
                 </div>
               </div>
 
-              {/* Tags & Action Link footer wrapper */}
+              {/* Tags & Project Actions */}
               <div className="mt-6 space-y-4 pt-4 border-t border-white/[0.06]">
                 {/* Tags */}
                 <div className="flex flex-wrap gap-1.5">
@@ -127,14 +127,27 @@ export function Projects() {
                   ))}
                 </div>
 
-                {/* Action Link */}
-                <a
-                  href={project.link}
-                  className="inline-flex items-center gap-1.5 text-primary hover:text-primary/80 font-bold transition-colors text-xs hover:underline pt-1"
-                >
-                  View Details
-                  <ExternalLink size={14} />
-                </a>
+                <div className="grid grid-cols-2 gap-3 pt-1">
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`View ${project.title} source code on GitHub`}
+                    className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-primary/40 bg-primary/10 px-3 py-2 text-xs font-bold text-primary transition-colors hover:bg-primary/20"
+                  >
+                    <Code2 size={14} />
+                    View Code
+                  </a>
+                  <button
+                    type="button"
+                    disabled
+                    title="Project link coming soon"
+                    className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-white/15 bg-white/[0.04] px-3 py-2 text-xs font-bold text-slate-300 opacity-70 cursor-not-allowed"
+                  >
+                    <ExternalLink size={14} />
+                    Live Demo
+                  </button>
+                </div>
               </div>
 
             </div>
