@@ -6,7 +6,7 @@ const certificates = [
   { title: 'CCNA: Enterprise Networking, Security, and Automation', file: '/certificates/ccna-enterprise-security-automation.pdf' },
   { title: 'Python Essentials 1', file: '/certificates/python-essentials-1.pdf' },
   { title: 'Python Essentials 2', file: '/certificates/python-essentials-2.pdf' },
-  { title: 'Certificate of Completion', file: '/certificates/certificate-1.pdf' },
+  { title: 'Web Fundamentals', file: '/certificates/certificate-1.pdf' },
 ]
 
 export function Certificates() {
