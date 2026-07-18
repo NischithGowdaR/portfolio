@@ -1,6 +1,6 @@
 'use client'
 
-import { Code2, ExternalLink } from 'lucide-react'
+import { Code2 } from 'lucide-react'
 
 const projects = [
   {
@@ -127,7 +127,7 @@ export function Projects() {
                   ))}
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 pt-1">
+                <div className="pt-1">
                   <a
                     href={project.githubUrl}
                     target="_blank"
@@ -138,15 +138,6 @@ export function Projects() {
                     <Code2 size={14} />
                     View Code
                   </a>
-                  <button
-                    type="button"
-                    disabled
-                    title="Project link coming soon"
-                    className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-white/15 bg-white/[0.04] px-3 py-2 text-xs font-bold text-slate-300 opacity-70 cursor-not-allowed"
-                  >
-                    <ExternalLink size={14} />
-                    Live Demo
-                  </button>
                 </div>
               </div>
 
