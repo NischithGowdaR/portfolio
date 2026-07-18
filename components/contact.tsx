@@ -4,7 +4,7 @@ import { Mail, ExternalLink, Code2, MapPin } from 'lucide-react'
 
 export function Contact() {
   return (
-    <section id="contact" className="py-28 px-4 bg-background relative overflow-hidden">
+    <section id="contact" className="py-20 sm:py-28 px-4 bg-background relative overflow-hidden">
       {/* Subtle Dotted Grid Overlay */}
       <div className="absolute inset-0 grid-bg opacity-[0.25] -z-10" />
 
@@ -13,20 +13,20 @@ export function Contact() {
       <div className="absolute bottom-[10%] left-[-15%] w-[400px] h-[400px] rounded-full bg-indigo-500/5 blur-[110px] pointer-events-none -z-10 animate-pulse [animation-delay:2s]" />
 
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-3 sm:mb-4 tracking-tight">
             Let's Connect
           </h2>
-          <p className="text-lg text-slate-400 font-medium max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-slate-400 font-medium max-w-2xl mx-auto">
             I'm always open to discussing new projects, innovative ideas, and opportunities to collaborate.
           </p>
         </div>
 
         {/* Contact Links Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-5 sm:gap-8 mb-8 sm:mb-12">
           
           {/* Email Card */}
-          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(239,68,68,0.2)] hover:border-red-500/40 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between">
+          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-5 sm:p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(239,68,68,0.2)] hover:border-red-500/40 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between">
             <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-red-500 to-transparent" />
             <div className="flex items-start gap-4">
               <div className="p-3 bg-red-500/10 text-red-500 rounded-xl">
@@ -45,7 +45,7 @@ export function Contact() {
           </div>
 
           {/* Location Card */}
-          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(34,197,94,0.2)] hover:border-green-500/40 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between">
+          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-5 sm:p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(34,197,94,0.2)] hover:border-green-500/40 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between">
             <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-green-500 to-transparent" />
             <div className="flex items-start gap-4">
               <div className="p-3 bg-green-500/10 text-green-500 rounded-xl">
@@ -59,7 +59,7 @@ export function Contact() {
           </div>
 
           {/* LinkedIn Card */}
-          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(59,130,246,0.2)] hover:border-blue-500/40 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between">
+          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-5 sm:p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(59,130,246,0.2)] hover:border-blue-500/40 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between">
             <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-blue-500 to-transparent" />
             <div className="flex items-start gap-4">
               <div className="p-3 bg-blue-500/10 text-blue-500 rounded-xl">
@@ -80,7 +80,7 @@ export function Contact() {
           </div>
 
           {/* GitHub Card */}
-          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(168,85,247,0.2)] hover:border-purple-500/40 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between">
+          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-5 sm:p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(168,85,247,0.2)] hover:border-purple-500/40 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between">
             <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-purple-500 to-transparent" />
             <div className="flex items-start gap-4">
               <div className="p-3 bg-purple-500/10 text-purple-500 rounded-xl">
@@ -103,14 +103,14 @@ export function Contact() {
         </div>
 
         {/* Action Banner */}
-        <div className="relative overflow-hidden border border-primary/25 hover:border-primary/40 rounded-2xl p-8 md:p-12 text-center shadow-2xl bg-gradient-to-tr from-[#0b0f19] to-[#120f32] transition-all duration-500">
+        <div className="relative overflow-hidden border border-primary/25 hover:border-primary/40 rounded-2xl p-5 sm:p-8 md:p-12 text-center shadow-2xl bg-gradient-to-tr from-[#0b0f19] to-[#120f32] transition-all duration-500">
           <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-primary to-indigo-500" />
           <p className="text-lg text-slate-300 mb-6 font-bold relative z-10">
             Available for internships, freelance projects, and full-time opportunities
           </p>
           <a
             href="mailto:nischitgowdar71@gmail.com"
-            className="inline-flex px-8 py-3.5 bg-gradient-to-r from-primary to-indigo-600 text-white rounded-xl font-bold hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 shadow-lg shadow-primary/20 hover:shadow-primary/35 relative z-10 text-sm"
+            className="inline-flex min-h-12 items-center px-8 py-3.5 bg-gradient-to-r from-primary to-indigo-600 text-white rounded-xl font-bold hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 shadow-lg shadow-primary/20 hover:shadow-primary/35 relative z-10 text-sm"
           >
             Send Me an Email
           </a>

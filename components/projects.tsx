@@ -57,7 +57,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-28 px-4 bg-background relative overflow-hidden">
+    <section id="projects" className="py-20 sm:py-28 px-4 bg-background relative overflow-hidden">
       {/* Grid Pattern overlay */}
       <div className="absolute inset-0 grid-bg opacity-[0.25] -z-10" />
 
@@ -66,21 +66,21 @@ export function Projects() {
       <div className="absolute bottom-[20%] left-[-10%] w-[400px] h-[400px] rounded-full bg-indigo-500/5 blur-[130px] pointer-events-none -z-10 animate-pulse [animation-delay:3s]" />
 
       <div className="max-w-6xl mx-auto">
-        <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4 tracking-tight text-white">
+        <div className="mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mb-3 sm:mb-4 tracking-tight text-white">
             Selected Projects
           </h2>
-          <p className="text-lg text-slate-400 font-medium">
+          <p className="text-base sm:text-lg text-slate-400 font-medium">
             Building innovative solutions with modern technologies
           </p>
         </div>
 
         {/* 3-Column Responsive Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-6 hover:bg-[#0c1122]/80 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between ${project.borderColor}`}
+              className={`relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-5 sm:p-6 hover:bg-[#0c1122]/80 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between ${project.borderColor}`}
             >
               {/* Top Accent Gradient Border */}
               <div className={`absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r ${project.accentColor}`} />
@@ -95,7 +95,7 @@ export function Projects() {
                 </div>
 
                 {/* Description */}
-                <p className="text-slate-350 leading-relaxed text-sm font-medium h-[120px] overflow-y-auto pr-1">
+                  <p className="text-slate-350 leading-relaxed text-sm font-medium sm:h-[120px] sm:overflow-y-auto sm:pr-1">
                   {project.description}
                 </p>
 
@@ -133,7 +133,7 @@ export function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`View ${project.title} source code on GitHub`}
-                    className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-primary/40 bg-primary/10 px-3 py-2 text-xs font-bold text-primary transition-colors hover:bg-primary/20"
+                    className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-lg border border-primary/40 bg-primary/10 px-3 py-2 text-xs font-bold text-primary transition-colors hover:bg-primary/20"
                   >
                     <Code2 size={14} />
                     View Code

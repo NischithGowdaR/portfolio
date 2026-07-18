@@ -32,21 +32,21 @@ const educationData = [
 
 export function Education() {
   return (
-    <section id="education" className="py-28 px-4 bg-background relative overflow-hidden">
+    <section id="education" className="py-20 sm:py-28 px-4 bg-background relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-[0.25] -z-10" />
       <div className="absolute top-[30%] left-[-15%] w-[400px] h-[400px] rounded-full bg-indigo-500/5 blur-[120px] pointer-events-none -z-10 animate-pulse" />
 
       <div className="max-w-5xl mx-auto">
-        <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">Education</h2>
-          <p className="text-lg text-slate-400 font-medium">Academic background and achievements</p>
+        <div className="mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-3 sm:mb-4 tracking-tight">Education</h2>
+          <p className="text-base sm:text-lg text-slate-400 font-medium">Academic background and achievements</p>
         </div>
 
         <div className="space-y-6">
           {educationData.map((edu, index) => (
             <div
               key={index}
-              className={`relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-8 hover:bg-[#0c1122]/80 transition-all duration-500 hover:scale-[1.005] ${edu.borderColor}`}
+              className={`relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-5 sm:p-8 hover:bg-[#0c1122]/80 transition-all duration-500 hover:scale-[1.005] ${edu.borderColor}`}
             >
               <div className={`absolute top-0 left-0 w-[5px] h-full ${edu.accentColor}`} />
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4 pl-2">

@@ -11,12 +11,12 @@ const certificates = [
 
 export function Certificates() {
   return (
-    <section id="certificates" className="py-28 px-4 bg-[#050714] relative overflow-hidden">
+    <section id="certificates" className="py-20 sm:py-28 px-4 bg-[#050714] relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-[0.2] -z-10" />
       <div className="max-w-6xl mx-auto">
-        <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">Certificates</h2>
-          <p className="text-lg text-slate-400 font-medium">Professional learning and networking credentials</p>
+        <div className="mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-3 sm:mb-4 tracking-tight">Certificates</h2>
+          <p className="text-base sm:text-lg text-slate-400 font-medium">Professional learning and networking credentials</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -26,7 +26,7 @@ export function Certificates() {
               href={certificate.file}
               target="_blank"
               rel="noreferrer"
-              className="group flex items-center gap-3 rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-4 hover:border-primary/50 hover:bg-[#10152a] transition-all duration-300"
+              className="group flex min-h-16 items-center gap-3 rounded-xl bg-[#0b0f19]/70 border border-white/[0.08] p-4 hover:border-primary/50 hover:bg-[#10152a] transition-all duration-300"
               aria-label={`View ${certificate.title}`}
             >
               <Award className="text-primary shrink-0" size={21} />

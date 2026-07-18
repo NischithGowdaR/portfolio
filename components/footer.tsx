@@ -4,7 +4,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="relative bg-background border-t border-white/[0.08] py-16 px-4 overflow-hidden">
+    <footer className="relative bg-background border-t border-white/[0.08] py-10 sm:py-16 px-4 overflow-hidden">
       {/* Dotted Grid Pattern overlay */}
       <div className="absolute inset-0 grid-bg opacity-[0.25] -z-10" />
 
@@ -16,7 +16,7 @@ export function Footer() {
             <p className="text-slate-400 font-semibold text-sm">Full-Stack Developer & AI Enthusiast</p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 text-slate-400 text-sm font-bold">
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-3 text-slate-400 text-sm font-bold">
             <a
               href="#projects"
               className="hover:text-primary transition-colors duration-200"
@@ -49,7 +49,7 @@ export function Footer() {
 
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/[0.05] text-center text-slate-500 text-xs font-semibold">
+        <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/[0.05] text-center text-slate-500 text-xs font-semibold">
           <p>© {currentYear} Nischith Gowda R. All rights reserved.</p>
         </div>
       </div>

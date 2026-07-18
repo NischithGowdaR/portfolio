@@ -8,7 +8,7 @@ export function Hero() {
   }
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-[#030014] via-[#080721] to-[#030014] px-4 py-28 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-[#030014] via-[#080721] to-[#030014] px-4 pb-24 pt-28 sm:py-28 overflow-hidden">
       {/* Subtle Dotted Grid Overlay */}
       <div className="absolute inset-0 grid-bg opacity-[0.35] -z-10" />
 
@@ -18,32 +18,32 @@ export function Hero() {
         <div className="absolute bottom-[20%] right-[8%] w-[300px] md:w-[500px] h-[300px] md:h-[500px] rounded-full bg-indigo-500/10 dark:bg-indigo-500/20 blur-[90px] md:blur-[140px] animate-mesh [animation-delay:4s]" />
       </div>
 
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-center z-10">
+      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 lg:gap-8 items-center z-10">
         
         {/* Left Column: Text & CTA */}
-        <div className="lg:col-span-7 space-y-8 text-left order-2 lg:order-1">
-          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#1b1437]/60 border border-primary/30 text-primary-foreground/90 text-xs font-bold uppercase tracking-wider">
+        <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left order-2 lg:order-1">
+          <div className="inline-flex max-w-full items-center gap-2.5 px-4 py-2 rounded-full bg-[#1b1437]/60 border border-primary/30 text-primary-foreground/90 text-[10px] sm:text-xs font-bold uppercase tracking-wider">
             <Sparkles size={12} className="text-primary" />
             <span>Open for Internships & Opportunities</span>
           </div>
 
           <div className="space-y-4">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 tracking-tight leading-[1.05]">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 tracking-tight leading-[1.05]">
               Nischith Gowda R
             </h1>
-            <p className="text-xl md:text-3xl font-extrabold bg-gradient-to-r from-primary via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+            <p className="text-lg sm:text-xl md:text-3xl font-extrabold bg-gradient-to-r from-primary via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
               Full-Stack Developer & AI Enthusiast
             </p>
           </div>
 
-          <p className="text-lg text-slate-400 max-w-xl leading-relaxed font-medium">
+          <p className="text-base sm:text-lg text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
             Computer Science undergraduate at Kalpataru Institute of Technology (KIT) with expertise in building scalable, secure web applications using React.js, Node.js, and Python. Passionate about AI-driven solutions, LLM integrations, and modern UI/UX paradigms.
           </p>
 
-          <div className="flex gap-4 justify-start flex-wrap pt-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-2 sm:pt-4">
             <a
               href="mailto:nischitgowdar71@gmail.com"
-              className="px-8 py-3.5 bg-gradient-to-r from-primary to-indigo-600 hover:from-primary/95 hover:to-indigo-600/95 text-white rounded-xl font-bold hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-[0_0_30px_rgba(139,92,246,0.3)] hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] cursor-pointer text-sm"
+              className="min-h-12 px-8 py-3.5 bg-gradient-to-r from-primary to-indigo-600 hover:from-primary/95 hover:to-indigo-600/95 text-white rounded-xl font-bold hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-[0_0_30px_rgba(139,92,246,0.3)] hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] cursor-pointer text-sm"
             >
               Get in Touch
             </a>
@@ -51,7 +51,7 @@ export function Hero() {
               href="https://github.com/NischithGowdaR"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3.5 border border-white/10 hover:border-white/25 text-white bg-white/5 hover:bg-white/10 rounded-xl font-bold hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 text-sm"
+              className="min-h-12 px-8 py-3.5 border border-white/10 hover:border-white/25 text-white bg-white/5 hover:bg-white/10 rounded-xl font-bold hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 text-sm"
             >
               GitHub Profile
             </a>
@@ -81,7 +81,7 @@ export function Hero() {
             </div>
 
             {/* Floating Badge 1: Top-Left */}
-            <div className="absolute -top-6 -left-6 bg-[#0b0f19]/80 backdrop-blur-md border border-white/[0.08] px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 animate-float hover:border-primary/50 transition-colors duration-300">
+            <div className="absolute -top-4 -left-2 sm:-top-6 sm:-left-6 bg-[#0b0f19]/80 backdrop-blur-md border border-white/[0.08] px-3 sm:px-4 py-2.5 sm:py-3 rounded-2xl shadow-xl flex items-center gap-2 sm:gap-3 animate-float hover:border-primary/50 transition-colors duration-300">
               <div className="p-2 bg-primary/10 text-primary rounded-lg">
                 <Code2 size={20} />
               </div>
@@ -92,7 +92,7 @@ export function Hero() {
             </div>
 
             {/* Floating Badge 2: Bottom-Right */}
-            <div className="absolute -bottom-6 -right-6 bg-[#0b0f19]/80 backdrop-blur-md border border-white/[0.08] px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 animate-float-reverse hover:border-indigo-500/50 transition-colors duration-300">
+            <div className="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-6 bg-[#0b0f19]/80 backdrop-blur-md border border-white/[0.08] px-3 sm:px-4 py-2.5 sm:py-3 rounded-2xl shadow-xl flex items-center gap-2 sm:gap-3 animate-float-reverse hover:border-indigo-500/50 transition-colors duration-300">
               <div className="p-2 bg-indigo-500/10 text-indigo-500 rounded-lg">
                 <Brain size={20} />
               </div>

@@ -4,7 +4,7 @@ import { Award, Globe } from 'lucide-react'
 
 export function Achievements() {
   return (
-    <section id="achievements" className="py-28 px-4 bg-background relative overflow-hidden">
+    <section id="achievements" className="py-20 sm:py-28 px-4 bg-background relative overflow-hidden">
       {/* Dotted Grid Pattern overlay */}
       <div className="absolute inset-0 grid-bg opacity-[0.25] -z-10" />
 
@@ -12,19 +12,19 @@ export function Achievements() {
       <div className="absolute bottom-[-10%] right-[-10%] w-[300px] h-[300px] rounded-full bg-primary/5 blur-[100px] pointer-events-none -z-10 animate-pulse" />
 
       <div className="max-w-5xl mx-auto">
-        <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
+        <div className="mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-3 sm:mb-4 tracking-tight">
             Achievements & Languages
           </h2>
-          <p className="text-lg text-slate-400 font-medium">
+          <p className="text-base sm:text-lg text-slate-400 font-medium">
             Recognition and multilingual capabilities
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-5 sm:gap-8">
           
           {/* Awards Card */}
-          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(245,158,11,0.2)] hover:border-amber-500/50 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between">
+          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-5 sm:p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(245,158,11,0.2)] hover:border-amber-500/50 transition-all duration-500 hover:scale-[1.01] flex flex-col justify-between">
             {/* Top gold accent stripe */}
             <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-amber-500 to-yellow-500" />
 
@@ -68,7 +68,7 @@ export function Achievements() {
           </div>
 
           {/* Languages Card */}
-          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(99,102,241,0.2)] hover:border-blue-500/50 transition-all duration-500 hover:scale-[1.01]">
+          <div className="relative overflow-hidden bg-[#0b0f19]/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-5 sm:p-8 hover:bg-[#0c1122]/80 hover:shadow-[0_0_50px_-12px_rgba(99,102,241,0.2)] hover:border-blue-500/50 transition-all duration-500 hover:scale-[1.01]">
             {/* Top blue accent stripe */}
             <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-blue-500 to-indigo-500" />
 

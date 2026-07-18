@@ -39,7 +39,7 @@ const skillCategories = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-28 px-4 bg-card relative overflow-hidden">
+    <section id="skills" className="py-20 sm:py-28 px-4 bg-card relative overflow-hidden">
       {/* Subtle Dotted Grid Overlay */}
       <div className="absolute inset-0 grid-bg opacity-[0.25] -z-10" />
 
@@ -48,20 +48,20 @@ export function Skills() {
       <div className="absolute bottom-[20%] right-[-10%] w-[350px] h-[350px] rounded-full bg-indigo-500/5 blur-[120px] pointer-events-none -z-10 animate-pulse [animation-delay:3s]" />
 
       <div className="max-w-5xl mx-auto">
-        <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
+        <div className="mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-3 sm:mb-4 tracking-tight">
             Skills & Expertise
           </h2>
-          <p className="text-lg text-slate-400 font-medium">
+          <p className="text-base sm:text-lg text-slate-400 font-medium">
             Tools and technologies I master
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-5 sm:gap-8">
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className={`relative overflow-hidden bg-background/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-8 hover:bg-[#0c1122]/80 transition-all duration-500 hover:scale-[1.01] ${category.borderHover}`}
+              className={`relative overflow-hidden bg-background/60 backdrop-blur-md border border-white/[0.08] rounded-2xl p-5 sm:p-8 hover:bg-[#0c1122]/80 transition-all duration-500 hover:scale-[1.01] ${category.borderHover}`}
             >
               {/* Top Accent Gradient Line */}
               <div className={`absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r ${category.accentColor}`} />
@@ -70,11 +70,11 @@ export function Skills() {
                 {category.name}
               </h3>
               
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2 sm:gap-3">
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className={`px-4 py-2.5 bg-[#121626]/80 text-slate-300 border border-white/[0.04] rounded-xl font-bold text-sm transition-all duration-200 shadow-sm cursor-default ${category.tagBgColor}`}
+                    className={`px-3 sm:px-4 py-2.5 bg-[#121626]/80 text-slate-300 border border-white/[0.04] rounded-xl font-bold text-sm transition-all duration-200 shadow-sm cursor-default ${category.tagBgColor}`}
                   >
                     {skill}
                   </span>
